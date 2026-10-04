@@ -14,7 +14,7 @@
 ### Bước 1: Khởi tạo cặp khóa SSH sử dụng thuật toán Ed25519
 - **Lệnh thực hiện:**
   ```bash
-  ssh-keygen -t ed25519 -C "phanthuanthanh270606@gmail.com"
+  ssh-keygen -t ed25519 -C vtrung25@gmail.com"
   ```
 - **Mô tả chi tiết:**
   - Lựa chọn thuật toán `ed25519`: Cung cấp tính bảo mật cao, kích thước khóa nhỏ gọn và tốc độ xử lý vượt trội hơn so với thuật toán RSA.
@@ -32,7 +32,7 @@
   ```
 - **Chuỗi Public Key thu được:**
   ```text
-  ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICBqoiuYqIXmPY9TfDpooh2E1uYEOdz3rlW13pSdA48N phanthuanthanh270606@gmail.com
+  ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICBqoiuYqIXmPY9TfDpooh2E1uYEOdz3rlW13pSdA48N vtrung256@gmail.com
   ```
 - **Thao tác cấu hình trên giao diện GitHub:**
   1. Đăng nhập vào tài khoản cá nhân trên [GitHub](https://github.com).
@@ -50,10 +50,10 @@
   ```
 - **Kết quả trả về:**
   ```text
-  Hi Phanthuanthanh! You've successfully authenticated, but GitHub does not provide shell access.
+  Hi vtrung! You've successfully authenticated, but GitHub does not provide shell access.
   ```
 - **Kết quả đạt được:**
-  - Máy chủ GitHub đã xác thực danh tính tài khoản `Phanthuanthanh` thành công qua SSH key Ed25519.
+  - Máy chủ GitHub đã xác thực danh tính tài khoản `vtrung` thành công qua SSH key Ed25519.
 
 ---
 
@@ -73,7 +73,7 @@
 ### Bước 5: Cấu hình liên kết Remote Repository qua giao thức SSH
 - **Lệnh liên kết repository cục bộ với GitHub:**
   ```bash
-  git remote add origin git@github.com:Phanthuanthanh/homework-session_04-ex3-IT_209.git
+  git remote add origin git@github.com:/vtrung25/IT209_SS4_Ex3.git
   ```
 
 ---
@@ -83,10 +83,6 @@
   ```bash
   git remote -v
   ```
-- **Kết quả trả về:**
-  ```text
-  origin	git@github.com:Phanthuanthanh/homework-session_04-ex3-IT_209.git (fetch)
-  origin	git@github.com:Phanthuanthanh/homework-session_04-ex3-IT_209.git (push)
   ```
 - **Kết quả đạt được:**
   - Đường dẫn Remote origin sử dụng đúng chuẩn giao thức SSH (`git@github.com:...`), không sử dụng giao thức HTTPS.
@@ -113,8 +109,3 @@
 
 ---
 
-## 3. Thông tin nộp bài
-- **Đường dẫn trên GitHub:** `homework/session_04/ex3/`
-- **URL kho lưu trữ GitHub (Web):** https://github.com/Phanthuanthanh/homework-session_04-ex3-IT_209
-- **URL kho lưu trữ GitHub (SSH):** `git@github.com:Phanthuanthanh/homework-session_04-ex3-IT_209.git`
-- **Cam kết bảo mật:** Chỉ tải lên mã nguồn dự án và tệp báo cáo `README.md`. Tuyệt đối không nộp khóa riêng tư (`id_ed25519`).
